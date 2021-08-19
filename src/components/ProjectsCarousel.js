@@ -5,14 +5,9 @@ import backgroundImage from '../background.jpg'
 function ProjectsCarousel() {
 
 
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  }
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel >
       <Carousel.Item>
         <Image style={{ display: "block", height: "500px" }}
           className="d-block w-100"
@@ -21,7 +16,7 @@ function ProjectsCarousel() {
         />
         <Carousel.Caption>
           <h3>Project 1</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <p>Fusion</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -33,7 +28,7 @@ function ProjectsCarousel() {
 
         <Carousel.Caption>
           <h3>Project 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>React App</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -46,7 +41,7 @@ function ProjectsCarousel() {
         <Carousel.Caption>
           <h3>Project 3</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Coming Soon...
           </p>
         </Carousel.Caption>
       </Carousel.Item>
